@@ -1,9 +1,14 @@
 public class Main {
-    public static void main(String[] args) {
-        Concesionario concesionario = new Concesionario("Oscar", "vipasa", 3155555, "vipsa", 0004);
-        Vehiculo vehiculo  = new Vehiculo("masda", null, null, 0, 0);
-    concesionario.Vendidos();
-    System.out.println("Mi carro es hfhfhf"+concesionario.getNombre());
-    }
+public static void main(String[] args) {
+    Concesionario concesionario = new Concesionario("Oscar", null, null, null, 0);
+    Vehiculo vehiculo = new Vehiculo(null, null, null, 0, 0);
+    Clientes clientes= new Clientes("oSCAR", null, 0, 0, 0);
+    Citas citas = new Citas(null, 0, 0, null, null);
+    
+    clientes.imprimir();
+    concesionario.CalcularDineroRecaudado(5000);
+    concesionario.CalcularDineroRecaudado(10000);
+}
+
 
 }

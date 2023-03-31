@@ -45,4 +45,12 @@ public class Citas {
     public void setFechaEntrega(Date fechaEntrega) {
         FechaEntrega = fechaEntrega;
     }
+    public void imprimir(){
+        System.out.println("Nombre del CLiente:"+Usuario);
+        System.out.println("Numero de Identificacion es"+Nit);
+        System.out.println("Codigo del cliente es::"+ID);
+        System.out.println("Fecha de Revision"+FechaCita);
+        System.out.println("Fecha de Entrega:"+FechaEntrega);
+        
+    }
 }

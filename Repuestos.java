@@ -1,24 +1,24 @@
 import java.sql.Date;
 
-
-
 public class Repuestos {
     String NombreCliente;
     String Vehiculo;
     String NombreMecanico;
     String Detalle;
+    double Cantidad = 5000;
     Date Fechainicio;
     Date FechaEntrega;
 
     
     public Repuestos(String nombreCliente, String vehiculo, String nombreMecanico, String detalle, Date fechainicio,
-            Date fechaEntrega) {
+            Date fechaEntrega, double Cantidad) {
         NombreCliente = nombreCliente;
         Vehiculo = vehiculo;
         NombreMecanico = nombreMecanico;
         Detalle = detalle;
         Fechainicio = fechainicio;
         FechaEntrega = fechaEntrega;
+        Cantidad = Cantidad;
     }
     public String getNombreCliente() {
         return NombreCliente;
@@ -56,6 +56,11 @@ public class Repuestos {
     public void setFechaEntrega(Date fechaEntrega) {
         FechaEntrega = fechaEntrega;
     }
-
+    public double getCantidad() {
+        return Cantidad;
+    }
+    public void setCantidad(double cantidad) {
+        Cantidad = cantidad;
+    }
 
 }

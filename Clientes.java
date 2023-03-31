@@ -1,3 +1,4 @@
+
 public class Clientes {
     String Nombre;
     String Apellido;
@@ -40,5 +41,13 @@ public class Clientes {
     }
     public void setDireccion(double direccion) {
         Direccion = direccion;
+    }
+    public void imprimir(){
+        System.out.println("Nombre del CLiente es:"+Nombre);
+        System.out.println("Apellido del Cliente es:"+Apellido);
+        System.out.println("Numero de Identificacion es:"+Nit);
+        System.out.println("Numero de Telefono"+Telefono);
+        System.out.println("Direccion del Cliente es:"+Direccion);
+        
     }
 }

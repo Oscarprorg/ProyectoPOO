@@ -45,10 +45,11 @@ public class Vehiculo {
     }
 
     public void imprimir() {
-        System.out.println("dfsfasff"+Marca);
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
+        System.out.println(""+Marca);
+        System.out.println(""+Modelo);
+        System.out.println(""+Color);
+        System.out.println(""+Km);
+        System.out.println(""+Precio);
 
     }
 
